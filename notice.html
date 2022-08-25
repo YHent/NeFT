@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
-
+<style>
+    .container-fluid {
+        scroll-snap-type: none;
+    }
+</style>
 <body>
-    <div class="container-fluid" style="background-color:#F4F4F8">
+    <div onscroll="header()"class="container-fluid box" style="background-color:#F4F4F8">
         <header
             class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 px-5 mb-4 position-fixed w-100"
             id="nav">
@@ -45,21 +49,20 @@
                             transform="translate(-9065.77 -731.3)" fill="#ffa943" />
                     </g>
                 </svg>
-
             </a>
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="/index.html" class="nav-link px-2 link-secondary">HOME</a></li>
-                <li><a href="/service.html" class="nav-link px-2 link-secondary">SERVICE</a></li>
-                <li><a href="/todo.html" class="nav-link px-2 link-secondary">TODO</a></li>
-                <li><a href="/weare.html" class="nav-link px-2 link-secondary">WE ARE</a></li>
-                <li><a href="/notice.html" class="nav-link px-2 ">NOTICE</a></li>
+                <li><a href="/index.html" class="nav-link px-2 link-secondary" id="home">HOME</a></li>
+                <li><a href="/service.html" class="nav-link px-2 link-secondary" id="service">SERVICE</a></li>
+                <li><a href="/todo.html" class="nav-link px-2 link-secondary" id="todo">TODO</a></li>
+                <li><a href="/weare.html" class="nav-link px-2 link-secondary" id="weare">WE ARE</a></li>
+                <li><a href="/notice.html" class="nav-link px-2 fc-blue" id="notice">NOTICE</a></li>
             </ul>
             <div class="col-md-3 text-end">
                 <!-- 로그인 넣으면됨 -->
             </div>
         </header>
         <section class="row justify-content-center box" id="section1" style="background:#F4F4F8;">
-            <div class="row w-100 d-flex" style="margin-top: 72px;">
+            <div class="row w-100 d-flex" style="margin-top: 150px;">
                 <p class=" w-100 ff-l fs-3 text-center" style="color:var(--main-navy);">
                 <svg style="top: -3px;position: relative;" id="new_logo" xmlns="http://www.w3.org/2000/svg" width="94.423" height="25.961" viewBox="0 0 94.423 25.961">
                     <g id="그룹_202" data-name="그룹 202" transform="translate(0)">
@@ -155,9 +158,14 @@
                 COPYRIGHT ⓒ NeFT. ALL RIGHTS RESERVED</p>
         </footer>
     </div>
+    <script>
+        const page = 'notice'
+    </script>
+<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
 
-
-    <script src="/js/bootstrap.min.js"></script>
 </body>
 
 </html>

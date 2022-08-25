@@ -48,11 +48,12 @@ body {
 
 .box {
     position: relative;
-    height: 937px;
-    /* max-height: 937px; */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+        height: 100vh;
+        min-height: 100vh;
+        /* max-height: 937px; */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
 }
 
 .col-md-7 .txt div:nth-child(1) {
@@ -106,6 +107,7 @@ body {
 .roadmap-card {
     position: relative;
     border: solid 8px #213556;
+    background: #18273F;
 }
 
 /* .roadmap-card::before {
@@ -144,3 +146,86 @@ body {
 table > * {
     text-align: center;
 }
+ .container-fluid {
+     scroll-snap-type: y mandatory ;
+     overflow-y: auto;
+ }
+
+#section1,#section2,#section3,#section4,footer{
+    scroll-snap-align: start;
+}
+
+.fc-blue{
+    color: var(--shadow-blue);
+}
+.service-content-img-2{
+    background: url(/img/service_content_img_2.png);
+    max-width: 100%;
+    padding-bottom: 100%;
+    background-size: 100%;
+    z-index: 1;
+    background-repeat: no-repeat;
+    translate: 80px;
+    background-position: center;
+}
+.service-content-img-2-1{
+    background: url(/img/service_content_img_2_1.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    transform: rotate(25deg);
+    z-index: 0;
+    translate: -40px;
+    background-position: center;
+}
+.service-content-img-3 {
+    background: url(/img/service_content_img_3.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 475px;
+}
+.service-content-img-4{
+    background: url(/img/service_content_img_4.png);
+    min-height: 40vw;
+    background-position: center;
+    background-size: 130%;
+}
+.wire{
+    background: #18273f;
+    height: 4px;
+    border-radius: 30px;
+}
+.wire > div{
+    background: #18273f;
+    width: 14px;
+    height: 14px;
+    border-radius: 20px;
+}
+.todo-content-img-1{
+background: url(/img/camera.png);
+    padding-bottom: 25%;
+    background-size: contain;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.todo-content-img-2 {
+background: url(/img/card.png);
+    max-width: 100%;
+    padding-bottom: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.todo-content-img-3 {
+background: url(/img/todo_content_img_3.png);
+    max-width: 100%;
+        padding-bottom: 100%;
+    background-size: contain;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+

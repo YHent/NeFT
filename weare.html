@@ -8,10 +8,15 @@
     <title>Neft</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="/js/index.js"></script>
 </head>
-
+<style>
+    .container-fluid {
+        scroll-snap-type: none;
+    }
+</style>
 <body>
-    <div class="container-fluid" style="background-color:#F4F4F8">
+    <div onscroll="header()" class="container-fluid" style="background-color:#F4F4F8;height: 100vh;">
         <header
             class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 px-5 mb-4 position-fixed w-100"
             id="nav">
@@ -49,7 +54,7 @@
                 <li><a href="/index.html" class="nav-link px-2 link-secondary">HOME</a></li>
                 <li><a href="/service.html" class="nav-link px-2 link-secondary">SERVICE</a></li>
                 <li><a href="/todo.html" class="nav-link px-2 link-secondary">TODO</a></li>
-                <li><a href="/weare.html" class="nav-link px-2 ">WE ARE</a></li>
+                <li><a href="/weare.html" class="nav-link px-2 fc-blue">WE ARE</a></li>
                 <li><a href="/notice.html" class="nav-link px-2 link-secondary">NOTICE</a></li>
             </ul>
             <div class="col-md-3 text-end">
@@ -57,7 +62,7 @@
             </div>
         </header>
         <section class="row justify-content-center" id="section1" style="background:#F4F4F8;">
-            <div class="row w-100 d-flex" style="margin-top: 72px;">
+            <div class="row w-100 d-flex" style="margin-top: 150px;">
                 <p class=" w-100 ff-b fs-3 text-center" style="color:var(--main-navy);">WE ARE</p>
             </div>
             <div class="row w-100 justify-content-center" style="color:var(--main-navy)">
@@ -119,9 +124,14 @@
                 COPYRIGHT ⓒ NeFT. ALL RIGHTS RESERVED</p>
         </footer>
     </div>
+<script>
+    const page = 'notice'
+</script>
+<script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 
-    <script src="/js/bootstrap.min.js"></script>
 </body>
 
 </html>

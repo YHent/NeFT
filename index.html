@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
-    <div class="container-fluid box" style="background-image: url(/img/bg_1.png);">
+<body >
+    <div onscroll="header()" class="container-fluid box" style="background-image: url(/img/bg_1.png);">
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 px-5 mb-4 position-fixed w-100"id="nav">
         <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
             <svg xmlns="http://www.w3.org/2000/svg" width="105.285" height="28.948" viewBox="0 0 105.285 28.948">
@@ -41,7 +41,7 @@
             </svg>
         </a>
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="/index.html" class="nav-link px-2 link-">HOME</a></li>
+            <li><a href="/index.html" class="nav-link px-2 fc-blue">HOME</a></li>
             <li><a href="/service.html" class="nav-link px-2 link-light">SERVICE</a></li>
             <li><a href="/todo.html" class="nav-link px-2 link-light">TODO</a></li>
             <li><a href="/weare.html" class="nav-link px-2 link-light">WE ARE</a></li>
@@ -176,7 +176,7 @@
             </div>
         </div>
     </section>
-    <footer class="w-100 text-center px-5 d-flex align-items-center" style="height:220px;">
+    <footer class="w-100 text-center px-5 d-flex align-items-center" style="height:220px; background-color: #fff;">
         <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
             <svg xmlns="http://www.w3.org/2000/svg" width="111.223" height="30.543" viewBox="0 0 111.223 30.543">
                 <g id="그룹_230" data-name="그룹 230" transform="translate(8746 523.869)">
@@ -211,8 +211,12 @@
         COPYRIGHT ⓒ NeFT. ALL RIGHTS RESERVED</p>
     </footer>
 </div>
-
-
+<script>
+    const page = 'index'
+</script>
 <script src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/js/index.js"></script>
 </body>
 </html> 
