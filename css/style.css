@@ -1,0 +1,146 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --main-navy: #020A38;
+    --shadow-blue: #3EA5FF;
+}
+
+.ff-l {
+    font-weight: 100;
+}
+
+.ff-b {
+    font-weight: bold;
+}
+
+.ff-m {
+    font-weight: 600;
+}
+
+.fs-0 {
+    font-size: 3.5rem !important;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    height: 100%;
+}
+
+.container-fluid {
+    padding: 0 !important
+}
+
+.row {
+    margin: 0;
+}
+
+#nav {
+    z-index: 9999;
+}
+
+.box {
+    position: relative;
+    height: 937px;
+    /* max-height: 937px; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.col-md-7 .txt div:nth-child(1) {
+    background-image: url(/img/neft_words.png);
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+}
+
+.website {
+    width: 160px;
+    height: 50px;
+
+}
+
+.txt-shadow {
+    text-shadow: 0px 3px 6px var(--shadow-blue);
+}
+
+.obj-shadow {
+    box-shadow: 0px 0px 6px var(--shadow-blue);
+}
+
+.title {
+    background-image: url(/img/title_shadow.png);
+    height: 232px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slick-slide {
+    height: inherit;
+    max-width: 175px;
+    background-size: 100%;
+    height: 210px !important;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slick-track {
+    height: 250px;
+}
+
+.nft {
+    height: 210px;
+}
+
+.roadmap-card {
+    position: relative;
+    border: solid 8px #213556;
+}
+
+/* .roadmap-card::before {
+    content: '완료';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    right: -31px;
+    top: -20px;
+    background-color: #213556;
+} */
+.roadmap-card .check{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #3EA5FF;
+    border: 8px solid #213556;
+    bottom: -28px;
+}
+.profile{
+    max-width: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 70%;
+}
+.profile[data-profile="1"]{
+    background-image: url(/img/faker.png);
+    box-shadow: 17px 14px 1px #17a990;
+}
+.profile[data-profile="2"] {
+    background-image: url(/img/faker.png);
+    box-shadow: -17px 14px 1px var(--main-navy);
+
+}
+table > * {
+    text-align: center;
+}
