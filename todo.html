@@ -8,12 +8,29 @@
     <title>Neft</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/animate.min.css" />
+    <script>
+        const page = 'todo'
+    </script>
+
 <link rel="stylesheet" type="text/css" href="slick/slick.css" />
 <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+<link rel="stylesheet" href="/css/animate.min.css" />
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/js/jquery.aniview.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/index.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.aniview').AniView({ animateClass: 'animate__animated' });
+    });
+</script>
 </head>
 
-<body>
-    <div onscroll="header()" class="container-fluid box" style="background:linear-gradient(0deg, #151F32 0%, #283F65 100%);">
+<body style="background:linear-gradient(0deg, #151F32 0%, #283F65 100%);">
+    <div class="container-fluid" >
         <header
             class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 px-5 mb-4 position-fixed w-100"
             id="nav">
@@ -49,7 +66,7 @@
                 </svg>
             </a>
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="/index.html" class="nav-link px-2 link-light">HOME</a></li>
+                <li><a href="/index.html" class="nav-link px-2 link-light ">HOME</a></li>
                 <li><a href="/service.html" class="nav-link px-2 link-light">SERVICE</a></li>
                 <li><a href="/todo.html" class="nav-link px-2 fc-blue">TODO</a></li>
                 <li><a href="/weare.html" class="nav-link px-2 link-light">WE ARE</a></li>
@@ -63,16 +80,18 @@
 
 
 
-        <section class=" w-100 d-flex box h-auto" id="section1" style="background-image: url(/img/todo_bg_1.png);background-position: center;background-position-y: inherit;">
+        <section class=" w-100 d-flex box " id="section1" style="background-image: url(/img/todo_bg_1.png);background-position: center;background-position-y: bottom;">
             
                 <div class="w-100 row position-relative d-flex justify-content-center align-items-center">
-                    <div class="col-lg-4 text-center text-lg-start text-light txt-shadow">
-                        <p class="w-25 todo-content-img-1 d-none d-lg-block"></p>
-                        <p class="ff-b fs-0">당신의 멋진 순간을</p>
-                        <p class="ff-b fs-0">NFT화 시켜 드립니다.</p>
+                    <div class="col-lg-4 text-center text-lg-start text-light txt-shadow ">
+                        <div class="aniview" data-av-animation="animate__fadeInUp">
+                            <p class="w-25 todo-content-img-1 d-none d-lg-block"></p>
+                            <p class="ff-b fs-0">당신의 멋진 순간을</p>
+                            <p class="ff-b fs-0">NFT화 시켜 드립니다.</p>
+                        </div>
                     </div>
-                    <div class="col-lg-4 d-flex justify-content-center order-first order-lg-last">
-                        <div class="w-100 todo-content-img-2">
+                    <div class="col-lg-4 col-lg-5 d-flex justify-content-center order-first order-lg-last mt-5 mt-lg-0">
+                        <div class="w-100 todo-content-img-2 aniview" data-av-animation="animate__fadeInUp">
                         </div>
                     </div>
                 </div>
@@ -83,14 +102,18 @@
                     <div class="title w-100 d-flex align-items-center">
                         <p class=" w-100 ff-b fs-3 text-center text-light txt-shadow">STORY</p>
                     </div>
-                    <div class="col-lg-4 d-flex">
-                        <div class="w-100 todo-content-img-3">
+                    <!--  -->
+                    <div class="col-lg-4 d-flex "  >
+                        <div class="w-100 todo-content-img-3 aniview"data-av-animation="animate__slideInLeft" >
                         </div>
                     </div>
-                    <div class="col-lg-4 text-center text-lg-start text-light">
-                        <p class="ff-b fs-5">평범한 사진이 NFT가 된다면 재미있지 않을까요?</p>
-                        <p class="ff-b fs-5">NeFT는 당신의 순간을 고유한 가치를 가진</p>
-                        <p class="ff-b fs-5">NFT를 만드는 것을 목표로 하고 있습니다.</p>
+                    <!--  -->
+                    <div class="col-lg-4 text-center text-lg-start text-light " >
+                        <div class="aniview" data-av-animation="animate__fadeInUp">
+                                <p class="ff-b fs-5 ">평범한 사진이 NFT가 된다면 재미있지 않을까요?</p>
+                                <p class="ff-b fs-5">NeFT는 당신의 순간을 고유한 가치를 가진</p>
+                                <p class="ff-b fs-5">NFT를 만드는 것을 목표로 하고 있습니다.</p>
+                        </div>
                     </div>
                 </div>
         </section>
@@ -100,8 +123,10 @@
                     <p class=" w-100 ff-b fs-3 text-center text-light txt-shadow">NFT</p>
                 </div>
                 <div class="col-lg-4 text-center text-lg-start text-light txt-shadow">
-                    <p class="ff-b fs-0">당신의 멋진 순간을</p>
-                    <p class="ff-b fs-0">끝내지 마세요</p>
+                    <div class="aniview animate__infinite animate__slower	3s" data-av-animation="animate__flash">
+                        <p class="ff-b fs-0">당신의 멋진 순간을</p>
+                        <p class="ff-b fs-0">끝내지 마세요</p>
+                    </div>
                 </div>
                 <div class="col-lg-4 d-flex">
                     <div class="w-100 text-center">
@@ -134,19 +159,21 @@
                 </div>
             </div>
             <div class="col-8 row justify-content-between mb-5 gy-5 gy-xl-0">
-                <div class="col-xl-3 nft rounded-4 roadmap-card position-relative d-flex align-items-end justify-content-center" style="" alt="">
-                    <div class="d-flex align-items-center justify-content-center w-100" style="height: 196px;">
-                        <div class="text-center">
-                            <img src="/img/semics.png" height="65" alt="">
-                            <p class="text-light mt-3">주식회사 <span class="ff-b" style="color:#F37121">SEMICS와</span> 협약하기</p>
+                <div class="col-xl-3" style="" alt="">
+                    <div class="aniview nft rounded-4 roadmap-card position-relative d-flex align-items-end justify-content-center"data-av-animation="animate__flipInY">
+                        <div class="d-flex align-items-center justify-content-center w-100 " style="height: 196px;">
+                            <div class="text-center">
+                                <img src="/img/semics.png" height="65" alt="">
+                                <p class="text-light mt-3">주식회사 <span class="ff-b" style="color:#F37121">SEMICS와</span> 협약하기</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="position-absolute check text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20.704" height="15.953" viewBox="0 0 20.704 15.953">
-                            <path id="패스_53" data-name="패스 53" d="M-12528.115,3830.927l5.119,8.378,9.709-10.5,1.693-1.832"
-                                transform="translate(12530.178 -3824.851)" fill="none" stroke="#fff" stroke-linecap="round"
-                                stroke-linejoin="round" stroke-width="3" />
-                        </svg>
+                        <div class="position-absolute check text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20.704" height="15.953" viewBox="0 0 20.704 15.953">
+                                <path id="패스_53" data-name="패스 53" d="M-12528.115,3830.927l5.119,8.378,9.709-10.5,1.693-1.832"
+                                    transform="translate(12530.178 -3824.851)" fill="none" stroke="#fff" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="3" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xl-1 d-flex align-items-center p-0">
@@ -154,75 +181,116 @@
                         <div ></div>
                     </div>
                 </div>
-                <div class="col-xl-3 nft rounded-4 roadmap-card position-relative d-flex align-items-end justify-content-center">
-                    <div class="position-absolute check text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20.704" height="15.953" viewBox="0 0 20.704 15.953">
-                            <path id="패스_53" data-name="패스 53" d="M-12528.115,3830.927l5.119,8.378,9.709-10.5,1.693-1.832"
-                                transform="translate(12530.178 -3824.851)" fill="none" stroke="#fff" stroke-linecap="round"
-                                stroke-linejoin="round" stroke-width="3" />
-                        </svg>
+                <div class="col-xl-3" style="" alt="">
+                    <div class="aniview nft rounded-4 roadmap-card position-relative d-flex align-items-end justify-content-center"
+                        data-av-animation="animate__flipInY">
+                        <div class="d-flex align-items-center justify-content-center w-100 " style="height: 196px;">
+                            <div class="text-center">
+                                <img src="/img/semics.png" height="65" alt="">
+                                <p class="text-light mt-3">주식회사 <span class="ff-b" style="color:#F37121">SEMICS와</span> 협약하기</p>
+                            </div>
+                        </div>
+                        <div class="position-absolute check text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20.704" height="15.953" viewBox="0 0 20.704 15.953">
+                                <path id="패스_53" data-name="패스 53" d="M-12528.115,3830.927l5.119,8.378,9.709-10.5,1.693-1.832"
+                                    transform="translate(12530.178 -3824.851)" fill="none" stroke="#fff" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="3" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
-                                <div class="col-xl-1 d-flex align-items-center p-0 ">
+                <div class="col-xl-1 d-flex align-items-center p-0 ">
                     <div class="w-100 d-flex justify-content-center align-items-center d-none d-xl-flex wire">
                         <div ></div>
                     </div>
                 </div>
-                <div class="col-xl-3 nft rounded-4 roadmap-card position-relative d-flex align-items-end justify-content-center">
-                    <div class="position-absolute check text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20.704" height="15.953" viewBox="0 0 20.704 15.953">
-                            <path id="패스_53" data-name="패스 53" d="M-12528.115,3830.927l5.119,8.378,9.709-10.5,1.693-1.832"
-                                transform="translate(12530.178 -3824.851)" fill="none" stroke="#fff" stroke-linecap="round"
-                                stroke-linejoin="round" stroke-width="3" />
-                        </svg>
+                <div class="col-xl-3" style="" alt="">
+                    <div class="aniview nft rounded-4 roadmap-card position-relative d-flex align-items-end justify-content-center"
+                        data-av-animation="animate__flipInY">
+                        <div class="d-flex align-items-center justify-content-center w-100 " style="height: 196px;">
+                            <div class="text-center">
+                                <img src="/img/semics.png" height="65" alt="">
+                                <p class="text-light mt-3">주식회사 <span class="ff-b" style="color:#F37121">SEMICS와</span> 협약하기</p>
+                            </div>
+                        </div>
+                        <div class="position-absolute check text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20.704" height="15.953" viewBox="0 0 20.704 15.953">
+                                <path id="패스_53" data-name="패스 53" d="M-12528.115,3830.927l5.119,8.378,9.709-10.5,1.693-1.832"
+                                    transform="translate(12530.178 -3824.851)" fill="none" stroke="#fff" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="3" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>  
+
             <div class="col-8 row justify-content-between gy-5 gy-xl-0">
-                <div
-                    class="col-xl-3 nft rounded-4 roadmap-card position-relative d-flex align-items-end justify-content-center">
-                    <div class="position-absolute check text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20.704" height="15.953" viewBox="0 0 20.704 15.953">
-                            <path id="패스_53" data-name="패스 53" d="M-12528.115,3830.927l5.119,8.378,9.709-10.5,1.693-1.832"
-                                transform="translate(12530.178 -3824.851)" fill="none" stroke="#fff" stroke-linecap="round"
-                                stroke-linejoin="round" stroke-width="3" />
-                        </svg>
+                <div class="col-xl-3" style="" alt="">
+                    <div class="aniview nft rounded-4 roadmap-card position-relative d-flex align-items-end justify-content-center"
+                        data-av-animation="animate__flipInY">
+                        <div class="d-flex align-items-center justify-content-center w-100 " style="height: 196px;">
+                            <div class="text-center">
+                                <img src="/img/semics.png" height="65" alt="">
+                                <p class="text-light mt-3">주식회사 <span class="ff-b" style="color:#F37121">SEMICS와</span> 협약하기</p>
+                            </div>
+                        </div>
+                        <div class="position-absolute check text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20.704" height="15.953" viewBox="0 0 20.704 15.953">
+                                <path id="패스_53" data-name="패스 53" d="M-12528.115,3830.927l5.119,8.378,9.709-10.5,1.693-1.832"
+                                    transform="translate(12530.178 -3824.851)" fill="none" stroke="#fff" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="3" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
-                                <div class="col-xl-1 d-flex align-items-center p-0">
+                <div class="col-xl-1 d-flex align-items-center p-0">
                     <div class="w-100 d-flex justify-content-center align-items-center d-none d-xl-flex wire">
                         <div ></div>
                     </div>
                 </div>
-                <div
-                    class="col-xl-3 nft rounded-4 roadmap-card position-relative d-flex align-items-end justify-content-center">
-                    <div class="position-absolute check text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20.704" height="15.953" viewBox="0 0 20.704 15.953">
-                            <path id="패스_53" data-name="패스 53" d="M-12528.115,3830.927l5.119,8.378,9.709-10.5,1.693-1.832"
-                                transform="translate(12530.178 -3824.851)" fill="none" stroke="#fff" stroke-linecap="round"
-                                stroke-linejoin="round" stroke-width="3" />
-                        </svg>
+               <div class="col-xl-3" style="" alt="">
+                    <div class="aniview nft rounded-4 roadmap-card position-relative d-flex align-items-end justify-content-center"data-av-animation="animate__flipInY">
+                        <div class="d-flex align-items-center justify-content-center w-100 " style="height: 196px;">
+                            <div class="text-center">
+                                <img src="/img/semics.png" height="65" alt="">
+                                <p class="text-light mt-3">주식회사 <span class="ff-b" style="color:#F37121">SEMICS와</span> 협약하기</p>
+                            </div>
+                        </div>
+                        <div class="position-absolute check text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20.704" height="15.953" viewBox="0 0 20.704 15.953">
+                                <path id="패스_53" data-name="패스 53" d="M-12528.115,3830.927l5.119,8.378,9.709-10.5,1.693-1.832"
+                                    transform="translate(12530.178 -3824.851)" fill="none" stroke="#fff" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="3" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
-                                <div class="col-xl-1 d-flex align-items-center p-0">
+                <div class="col-xl-1 d-flex align-items-center p-0">
                     <div class="w-100 d-flex justify-content-center align-items-center d-none d-xl-flex wire">
                         <div ></div>
                     </div>
                 </div>
-                <div
-                    class="col-xl-3 nft rounded-4 roadmap-card position-relative d-flex align-items-end justify-content-center"
-                >하이
-                    <div class="position-absolute check text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20.704" height="15.953" viewBox="0 0 20.704 15.953">
-                            <path id="패스_53" data-name="패스 53" d="M-12528.115,3830.927l5.119,8.378,9.709-10.5,1.693-1.832"
-                                transform="translate(12530.178 -3824.851)" fill="none" stroke="#fff" stroke-linecap="round"
-                                stroke-linejoin="round" stroke-width="3" />
-                        </svg>
+                <div class="col-xl-3" style="" alt="">
+                    <div class="aniview nft rounded-4 roadmap-card position-relative d-flex align-items-end justify-content-center"
+                        data-av-animation="animate__flipInY">
+                        <div class="d-flex align-items-center justify-content-center w-100 " style="height: 196px;">
+                            <div class="text-center">
+                                <img src="/img/semics.png" height="65" alt="">
+                                <p class="text-light mt-3">주식회사 <span class="ff-b" style="color:#F37121">SEMICS와</span> 협약하기</p>
+                            </div>
+                        </div>
+                        <div class="position-absolute check text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20.704" height="15.953" viewBox="0 0 20.704 15.953">
+                                <path id="패스_53" data-name="패스 53" d="M-12528.115,3830.927l5.119,8.378,9.709-10.5,1.693-1.832"
+                                    transform="translate(12530.178 -3824.851)" fill="none" stroke="#fff" stroke-linecap="round"
+                                    stroke-linejoin="round" stroke-width="3" />
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <footer class="w-100 text-center px-5 d-flex align-items-center" style="height:220px;">
+        <footer class="w-100 row text-center px-5 d-flex align-items-center" style="height:220px;">
             <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
                 <svg xmlns="http://www.w3.org/2000/svg" width="105.285" height="28.948" viewBox="0 0 105.285 28.948">
                     <g id="그룹_217" data-name="그룹 217" transform="translate(-100 -44.052)">
@@ -252,26 +320,22 @@
                     </g>
                 </svg>
             </a>
-            <p class="text-light" style="margin: 0;">느프트 주식회사 | 대표이사 유정욱 | 경기 성남시 분당구 서현로 204, 618호 | E-mail
+            <p class="text-light col-md-9" style="margin: 0;">느프트 주식회사 | 대표이사 유정욱 | 경기 성남시 분당구 서현로 204, 618호 | E-mail
                 NeFT@neft.pics | 사업자번호 111-11-02177
                 COPYRIGHT ⓒ NeFT. ALL RIGHTS RESERVED</p>
         </footer>
     </div>
-<script>
-    const page = 'todo'
-</script>
-<script src="/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="/js/index.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
+
 <script>
         $('#slick').slick({
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false, 
             dots: false,
-            infinite: false,
-            speed: 300,
-            slidesToShow: 9,
-            slidesToScroll: 9,
+            infinite: true,
+            speed: 1000,
+            slidesToShow: 11,
+            slidesToScroll: 1,
             responsive: [
                 {
                     breakpoint: 1024,
@@ -283,15 +347,15 @@
                 {
                     breakpoint: 600,
                     settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToShow: 3,
+                        slidesToScroll: 3
                     }
                 },
                 {
                     breakpoint: 480,
                     settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToShow: 3,
+                        slidesToScroll: 3
                     }
                 }
                 // You can unslick at a given breakpoint now by adding:

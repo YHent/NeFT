@@ -25,13 +25,15 @@
 }
 
 .fs-0 {
-    font-size: 3.5rem !important;
-}
 
+    font-size: calc(3.5rem + .6vw) !important;
+}
 body {
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 500;
     height: 100%;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .container-fluid {
@@ -44,16 +46,15 @@ body {
 
 #nav {
     z-index: 9999;
+    transition: linear .5s;
 }
 
 .box {
-    position: relative;
-        height: 100vh;
-        min-height: 100vh;
-        /* max-height: 937px; */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+
+    /* max-height: 937px; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .col-md-7 .txt div:nth-child(1) {
@@ -120,7 +121,7 @@ body {
     top: -20px;
     background-color: #213556;
 } */
-.roadmap-card .check{
+.roadmap-card .check {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -128,37 +129,56 @@ body {
     border: 8px solid #213556;
     bottom: -28px;
 }
-.profile{
+
+.profile {
     max-width: 70%;
     background-position: center;
     background-repeat: no-repeat;
     padding-bottom: 70%;
+    background-size: cover;
 }
-.profile[data-profile="1"]{
-    background-image: url(/img/faker.png);
+
+.profile[data-profile="1"] {
+    background-image: url(/img/profile.jpg);
     box-shadow: 17px 14px 1px #17a990;
 }
+
 .profile[data-profile="2"] {
-    background-image: url(/img/faker.png);
+    background-image: url(/img/profile.jpg);
     box-shadow: -17px 14px 1px var(--main-navy);
 
 }
-table > * {
+
+table>* {
     text-align: center;
 }
- .container-fluid {
-     scroll-snap-type: y mandatory ;
-     overflow-y: auto;
- }
 
-#section1,#section2,#section3,#section4,footer{
-    scroll-snap-align: start;
+.container-fluid {
+    scroll-snap-type: y mandatory;
+    overflow-y: auto;
 }
 
-.fc-blue{
+#section1,
+#section2,
+#section3,
+#section4,
+footer {
+    scroll-snap-align: start;
+    position: relative;
+    height: auto;
+    min-height: 100vh;
+}
+
+footer {
+    height: 220px;
+    min-height: 0px !important;
+}
+
+.fc-blue {
     color: var(--shadow-blue);
 }
-.service-content-img-2{
+
+.service-content-img-2 {
     background: url(/img/service_content_img_2.png);
     max-width: 100%;
     padding-bottom: 100%;
@@ -168,15 +188,18 @@ table > * {
     translate: 80px;
     background-position: center;
 }
-.service-content-img-2-1{
+
+.service-content-img-2-1 {
     background: url(/img/service_content_img_2_1.png);
     background-size: 80%;
+    padding-bottom: 100%;
     background-repeat: no-repeat;
     transform: rotate(25deg);
     z-index: 0;
-    translate: -40px;
+    right: 0;
     background-position: center;
 }
+
 .service-content-img-3 {
     background: url(/img/service_content_img_3.png);
     background-size: 100%;
@@ -184,48 +207,68 @@ table > * {
     background-position: bottom;
     min-height: 475px;
 }
-.service-content-img-4{
+
+.service-content-img-4 {
     background: url(/img/service_content_img_4.png);
     min-height: 40vw;
     background-position: center;
     background-size: 130%;
 }
-.wire{
-    background: #18273f;
+
+.wire {
+    background: #adb5bd;
     height: 4px;
     border-radius: 30px;
 }
-.wire > div{
-    background: #18273f;
+
+.wire>div {
+    background: #adb5bd;
     width: 14px;
     height: 14px;
     border-radius: 20px;
 }
-.todo-content-img-1{
-background: url(/img/camera.png);
+
+.todo-content-img-1 {
+    background: url(/img/camera.png);
     padding-bottom: 25%;
     background-size: contain;
     z-index: 1;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .todo-content-img-2 {
-background: url(/img/card.png);
+    background: url(/img/card.png);
     max-width: 100%;
-    padding-bottom: 100%;
+    min-width: 350px;
+    padding-bottom: 67%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .todo-content-img-3 {
-background: url(/img/todo_content_img_3.png);
+    background: url(/img/todo_content_img_3.png);
     max-width: 100%;
-        padding-bottom: 100%;
+    padding-bottom: 100%;
     background-size: contain;
     z-index: 1;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-
+.weare-content-img-1{
+    background-image: url(/img/weare_content_img_1.png);
+        width: 100%;
+        padding-bottom: 35%;
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+.weare-title{
+    background: transparent linear-gradient(89deg, #1ECB80 0%, #267BC5 100%) 0% 0% no-repeat padding-box;
+    height: 94px;
+}
+.av-container {
+    width: 100%;
+}

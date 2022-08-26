@@ -8,6 +8,21 @@
     <title>Neft</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/animate.min.css" />
+    <script>
+        const page = 'service'
+    </script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.aniview.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/index.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.aniview').AniView({ animateClass: 'animate__animated' });
+        });
+    </script>
 </head>
 <style>
     .container-fluid{
@@ -15,8 +30,8 @@
     }
 </style>
 
-<body>
-    <div onscroll="header()" class="container-fluid box" style="background-color:#F4F4F8">
+<body >
+    <div class="container-fluid" style="background-color:#F4F4F8">
         <header
             class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 px-5 mb-4 position-fixed w-100"
             id="nav">
@@ -64,9 +79,9 @@
         </header>
         <section class="row w-100 d-flex justify-content-end box" id="section1" style="background-image: url(/img/service_content_img_1.png);">
             <div class="col-xl-3  d-flex box">
-                <div class="txt text-start w-100 position-relative d-flex flex-column align-items-center align-items-xl-start" style="top: 24%;">
+                <div class="txt text-start w-100 position-relative d-flex flex-column align-items-center align-items-xl-start aniview"  data-av-animation="animate__backInRight" style="top: 24%;">
                     <div class="mb-5">
-                        <svg class="w-100" xmlns="http://www.w3.org/2000/svg" width="318.251" height="52.767" view="0 0 318.251 52.767">
+                        <svg class="w-100" style="max-width:100%;" xmlns="http://www.w3.org/2000/svg" width="318.251" height="52.767" view="0 0 318.251 52.767">
                             <g id="그룹_232" data-name="그룹 232" transform="translate(-25.1 -385)">
                                 <path id="패스_87" data-name="패스 87" d="M36.317,403.664v29.26H50.939l10.468,9.924H25.1V392.6Z"
                                     transform="translate(0 -6.306)" fill="#fff" />
@@ -102,15 +117,21 @@
             <div class="col-md-10  d-flex align-items-center my-5" style="background-color:#fff">
                 <div class="w-100 row position-relative d-flex justify-content-center align-items-center">
                     <div class="col-lg-4 text-center text-lg-start" style="color:var(--main-navy)">
-                        <p class="ff-b fs-1">건전한</p>
-                        <p class="fs-1 ff-l">LCK 승부예측</p>
-                        <p>-매주 지급하는 문화상품권</p>
-                        <p>-편리한 승부예측</p>
+                        <div class="aniview" data-av-animation="animate__fadeInUp">
+                            <p class="ff-b fs-1">건전한</p>
+                            <p class="fs-1 ff-l">LCK 승부예측</p>
+                            <p>-매주 지급하는 문화상품권</p>
+                            <p>-편리한 승부예측</p>
+                        </div>
                     </div>
                     <div class="col-lg-4 d-flex">
-                        <div class="w-50 service-content-img-2">
-                        </div>
-                        <div class="w-50 service-content-img-2-1">
+                        <div class="aniview" data-av-animation="animate__slideInRight">
+                            <div class="d-flex position-relative">
+                            <div class="w-50 service-content-img-2">
+                            </div>
+                            <div class="w-50 service-content-img-2-1 position-absolute">
+                            </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -120,22 +141,26 @@
             <div class="col-md-10  d-flex align-items-center mt-5" style="background-color:#fff">
                 <div class="w-100 row position-relative d-flex justify-content-center align-items-center">
                     <div class="col-12 col-lg-6">
-                        <div class="service-content-img-3">
+                        <div class="aniview" data-av-animation="animate__slideInLeft">
+                            <div class="service-content-img-3">
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-2 text-center text-lg-start" style="color:var(--main-navy)">
-                        <p class="ff-b fs-1">승리를 위한</p>
-                        <p class="fs-1 ff-l">멘탈서치</p>
-                        <p>-한 눈에 파악가능한</p>
-                        <p>우리팀 멘탈 상황</p>
+                        <div class="aniview" data-av-animation="animate__fadeInUp">
+                            <p class="ff-b fs-1">승리를 위한</p>
+                            <p class="fs-1 ff-l">멘탈서치</p>
+                            <p>-한 눈에 파악가능한</p>
+                            <p>우리팀 멘탈 상황</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="w-100 d-flex justify-content-center" id="section4">
-            <div class="w-100 ervice-content-img-4" ></div>
+        <section class="w-100 d-flex justify-content-center box" id="section4">
+            <div class="w-100 service-content-img-4 " ></div>
         </section>
-        <footer class="w-100 text-center px-5 d-flex align-items-center" style="height:220px;">
+        <footer class="w-100 row text-center px-5 d-flex align-items-center" style="height:220px;">
             <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
                 <svg xmlns="http://www.w3.org/2000/svg" width="111.223" height="30.543" viewBox="0 0 111.223 30.543">
                     <g id="그룹_230" data-name="그룹 230" transform="translate(8746 523.869)">
@@ -168,18 +193,12 @@
                 </svg>
 
             </a>
-            <p class="text-black-50" style="margin: 0;">느프트 주식회사 | 대표이사 유정욱 | 경기 성남시 분당구 서현로 204, 618호 | E-mail
+            <p class="text-black-50 col-md-9" style="margin: 0;">느프트 주식회사 | 대표이사 유정욱 | 경기 성남시 분당구 서현로 204, 618호 | E-mail
                 NeFT@neft.pics | 사업자번호 111-11-02177
                 COPYRIGHT ⓒ NeFT. ALL RIGHTS RESERVED</p>
         </footer>
     </div>
 
-<script>
-    const page = 'service'
-</script>
-<script src="/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="/js/index.js"></script>
+
 </body>
 </html>

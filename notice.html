@@ -8,6 +8,21 @@
     <title>Neft</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/animate.min.css" />
+        <script>
+            const page = 'notice'
+        </script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.aniview.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/index.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.aniview').AniView({ animateClass: 'animate__animated' });
+        });
+    </script>
 </head>
 <style>
     .container-fluid {
@@ -15,7 +30,7 @@
     }
 </style>
 <body>
-    <div onscroll="header()"class="container-fluid box" style="background-color:#F4F4F8">
+    <div class="container-fluid box" style="background-color:#F4F4F8">
         <header
             class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 px-5 mb-4 position-fixed w-100"
             id="nav">
@@ -61,7 +76,7 @@
                 <!-- 로그인 넣으면됨 -->
             </div>
         </header>
-        <section class="row justify-content-center box" id="section1" style="background:#F4F4F8;">
+        <section class="row justify-content-center " id="section1" style="background:#F4F4F8;">
             <div class="row w-100 d-flex" style="margin-top: 150px;">
                 <p class=" w-100 ff-l fs-3 text-center" style="color:var(--main-navy);">
                 <svg style="top: -3px;position: relative;" id="new_logo" xmlns="http://www.w3.org/2000/svg" width="94.423" height="25.961" viewBox="0 0 94.423 25.961">
@@ -115,12 +130,28 @@
                                 <td class="p-3 ">노티스입니다</td>
                                 <td class="p-3 ">2022-08-27</td>
                             </tr>
+                            <tr>
+                                <td class="p-3 ">노티스입니다</td>
+                                <td class="p-3 ">2022-08-27</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 ">노티스입니다</td>
+                                <td class="p-3 ">2022-08-27</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 ">노티스입니다</td>
+                                <td class="p-3 ">2022-08-27</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 ">노티스입니다</td>
+                                <td class="p-3 ">2022-08-27</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
         </section>
-        <footer class="w-100 text-center px-5 d-flex align-items-center" style="height:220px;">
+        <footer class="w-100 row text-center px-5 d-flex align-items-center" style="height:220px;">
             <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
                 <svg xmlns="http://www.w3.org/2000/svg" width="111.223" height="30.543" viewBox="0 0 111.223 30.543">
                     <g id="그룹_230" data-name="그룹 230" transform="translate(8746 523.869)">
@@ -153,19 +184,11 @@
                 </svg>
 
             </a>
-            <p class="text-black-50" style="margin: 0;">느프트 주식회사 | 대표이사 유정욱 | 경기 성남시 분당구 서현로 204, 618호 | E-mail
+            <p class="text-black-50 col-md-9" style="margin: 0;">느프트 주식회사 | 대표이사 유정욱 | 경기 성남시 분당구 서현로 204, 618호 | E-mail
                 NeFT@neft.pics | 사업자번호 111-11-02177
                 COPYRIGHT ⓒ NeFT. ALL RIGHTS RESERVED</p>
         </footer>
     </div>
-    <script>
-        const page = 'notice'
-    </script>
-<script src="/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="/js/index.js"></script>
-
 </body>
 
 </html>

@@ -8,7 +8,21 @@
     <title>Neft</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
-    <script type="text/javascript" src="/js/index.js"></script>
+    <link rel="stylesheet" href="/css/animate.min.css" />
+    <script>
+        const page = 'weare'
+    </script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/js/jquery.aniview.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/index.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.aniview').AniView({ animateClass: 'animate__animated' });
+    });
+</script>
 </head>
 <style>
     .container-fluid {
@@ -16,77 +30,86 @@
     }
 </style>
 <body>
-    <div onscroll="header()" class="container-fluid" style="background-color:#F4F4F8;height: 100vh;">
+    <div class="container-fluid" style="background-color:#F4F4F8;">
         <header
             class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 px-5 mb-4 position-fixed w-100"
             id="nav">
             <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-                <svg xmlns="http://www.w3.org/2000/svg" width="111.223" height="30.543" viewBox="0 0 111.223 30.543">
-                    <g id="그룹_206" data-name="그룹 206" transform="translate(8746 523.869)">
-                        <g id="그룹_204" data-name="그룹 204" transform="translate(-8746 -523.869)">
-                            <path id="패스_69" data-name="패스 69"
-                                d="M128.1,205.665h5.621L148.788,223.8V205.3h6.745v30.164h-5.621L134.831,217.33v18.513H128.1Z"
-                                transform="translate(-128.1 -205.3)" fill="#020a38" />
-                            <path id="패스_70" data-name="패스 70" d="M735.753,213.857h-9.811v24.207h-6.731V213.857H709.4V207.9h26.353Z"
-                                transform="translate(-624.53 -207.52)" fill="#020a38" />
-                            <g id="그룹_198" data-name="그룹 198" transform="translate(60.035 0.365)">
-                                <path id="패스_71" data-name="패스 71" d="M539.3,295.3v17.4h6.745V301.155H559.74V295.3H539.3Z"
-                                    transform="translate(-539.3 -282.525)" fill="#020a38" />
-                                <path id="패스_72" data-name="패스 72" d="M539.3,207.8v5.928h22.134V207.8Z"
-                                    transform="translate(-539.3 -207.8)" fill="#020a38" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="105.285" height="28.948" viewBox="0 0 105.285 28.948">
+                    <g id="그룹_217" data-name="그룹 217" transform="translate(-100 -44.052)">
+                        <g id="그룹_202" data-name="그룹 202" transform="translate(100 44.052)">
+                            <path id="패스_77" data-name="패스 77"
+                                d="M128.1,585.646h5.322l14.267,17.17V585.3h6.387v28.561h-5.322l-14.28-17.17V614.22H128.1Z"
+                                transform="translate(-128.1 -585.3)" fill="#fff" />
+                            <path id="패스_78" data-name="패스 78"
+                                d="M734.153,593.74h-9.29v22.921H718.49V593.74H709.2V588.1h24.953Z"
+                                transform="translate(-628.868 -587.713)" fill="#fff" />
+                            <g id="그룹_200" data-name="그룹 200" transform="translate(56.817 0.387)">
+                                <path id="패스_79" data-name="패스 79" d="M539.1,675.5v16.479h6.373V681.044H558.44V675.5H539.1Z"
+                                    transform="translate(-539.1 -663.418)" fill="#fff" />
+                                <path id="패스_80" data-name="패스 80" d="M539.1,588.1v5.6h20.958v-5.6Z"
+                                    transform="translate(-539.1 -588.1)" fill="#fff" />
                             </g>
-                            <g id="그룹_199" data-name="그룹 199" transform="translate(32.762 0.365)">
-                                <path id="패스_73" data-name="패스 73" d="M359.231,213.655h15.7V207.8H358.34l-5.84,5.855Z"
-                                    transform="translate(-352.5 -207.8)" fill="#020a38" />
-                                <path id="패스_74" data-name="패스 74" d="M373.626,295.84V290H352.5v5.84h21.126Z"
-                                    transform="translate(-352.5 -277.999)" fill="#020a38" />
-                                <path id="패스_75" data-name="패스 75" d="M359.231,374.4H352.5v5.855h22.761V374.4Z"
-                                    transform="translate(-352.5 -350.076)" fill="#020a38" />
+                            <g id="그룹_201" data-name="그룹 201" transform="translate(30.98 0.387)">
+                                <path id="패스_81" data-name="패스 81" d="M358.587,593.63h14.861V588.1h-15.7l-5.543,5.53Z"
+                                    transform="translate(-352.2 -588.1)" fill="#fff" />
+                                <path id="패스_82" data-name="패스 82" d="M372.217,675.744V670.2H352.2v5.544h20.017Z"
+                                    transform="translate(-352.2 -658.85)" fill="#fff" />
+                                <path id="패스_83" data-name="패스 83" d="M358.587,754.6H352.2v5.543h21.566V754.6Z"
+                                    transform="translate(-352.2 -731.583)" fill="#fff" />
                             </g>
                         </g>
-                        <path id="패스_85" data-name="패스 85" d="M358.367,207.8v5.853H352.5Z" transform="translate(-9065.77 -731.3)"
-                            fill="#ffa943" />
+                        <path id="패스_84" data-name="패스 84" d="M358.03,587.8v5.543H352.5Z"
+                            transform="translate(-221.479 -543.402)" fill="#ffa943" />
                     </g>
                 </svg>
-
             </a>
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="/index.html" class="nav-link px-2 link-secondary">HOME</a></li>
-                <li><a href="/service.html" class="nav-link px-2 link-secondary">SERVICE</a></li>
-                <li><a href="/todo.html" class="nav-link px-2 link-secondary">TODO</a></li>
+                <li><a href="/index.html" class="nav-link px-2 link-light ">HOME</a></li>
+                <li><a href="/service.html" class="nav-link px-2 link-light">SERVICE</a></li>
+                <li><a href="/todo.html" class="nav-link px-2 link-light">TODO</a></li>
                 <li><a href="/weare.html" class="nav-link px-2 fc-blue">WE ARE</a></li>
-                <li><a href="/notice.html" class="nav-link px-2 link-secondary">NOTICE</a></li>
+                <li><a href="/notice.html" class="nav-link px-2 link-light">NOTICE</a></li>
             </ul>
             <div class="col-md-3 text-end">
                 <!-- 로그인 넣으면됨 -->
             </div>
         </header>
         <section class="row justify-content-center" id="section1" style="background:#F4F4F8;">
-            <div class="row w-100 d-flex" style="margin-top: 150px;">
-                <p class=" w-100 ff-b fs-3 text-center" style="color:var(--main-navy);">WE ARE</p>
+            <div class="row w-100 d-flex p-0">
+                <div class="weare-content-img-1"></div>
+            </div>
+            <div class="row w-100 d-flex justify-content-center p-0 align-items-center" style="min-height: 300px;">
+                <div class="col-md-6 weare-title my-5 text-center d-flex align-items-center justify-content-center py-3">
+                    <span class="fs-3 ff-b text-light ">NEFT는 즐거움을 추구하는 사람들이 모여있습니다.</span>
+                </div>
             </div>
             <div class="row w-100 justify-content-center" style="color:var(--main-navy)">
                 <div class="row col-xl-8 justify-content-center align-items-center mb-5">
                     <div class="col-md-5 col-xl-6">
-                        <div class="w-100 rounded-circle profile m-auto mb-5 mb-md-0" data-profile="1"></div>
+                        <div class="w-100 rounded-circle profile m-auto mb-5 mb-md-0 aniview" data-av-animation="animate__slideInLeft" data-profile="1"></div>
                     </div>
                     <div class="col-md-5 col-xl-6">
-                        <h1>유정욱 <span class="fs-6">대표이사</span></h1>
-                        <p class="mt-5">주식회사 NeFT는 일상에서의 재미를 추구하며</p>
+                        <div class="aniview" data-av-animation="animate__fadeInUp">
+                            <h1>유정욱 <span class="fs-6">대표이사</span></h1>
+                            <p class="mt-5">주식회사 NeFT는 일상에서의 재미를 추구하며</p>
+                        </div>
                     </div>
                 </div>
-                <div class="row col-xl-8 justify-content-center align-items-center">
+                <div class="row col-xl-8 justify-content-center align-items-center mt-5">
                     <div class="col-md-5 col-xl-6 text-end">
-                        <h1>황성인 <span class="fs-6">대표이사</span></h1>
-                        <p class="mt-5">주식회사 NeFT는 일상에서의 재미를 추구하며</p>
+                        <div class="aniview" data-av-animation="animate__fadeInUp">
+                            <h1>황성인 <span class="fs-6">대표이사</span></h1>
+                            <p class="mt-5">주식회사 NeFT는 일상에서의 재미를 추구하며</p>
+                        </div>
                     </div>
                     <div class="col-md-5 col-xl-6">
-                        <div class="w-100 rounded-circle profile m-auto mb-5 mb-md-0" data-profile="2" ></div>
+                        <div class="w-100 rounded-circle profile m-auto mb-5 mb-md-0 aniview" data-av-animation="animate__slideInRight" data-profile="2" ></div>
                     </div>
                 </div>
             </div>
         </section>
-        <footer class="w-100 text-center px-5 d-flex align-items-center" style="height:220px;">
+        <footer class="w-100 row text-center px-5 d-flex align-items-center" style="height:220px;">
             <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
                 <svg xmlns="http://www.w3.org/2000/svg" width="111.223" height="30.543" viewBox="0 0 111.223 30.543">
                     <g id="그룹_230" data-name="그룹 230" transform="translate(8746 523.869)">
@@ -119,18 +142,11 @@
                 </svg>
 
             </a>
-            <p class="text-black-50" style="margin: 0;">느프트 주식회사 | 대표이사 유정욱 | 경기 성남시 분당구 서현로 204, 618호 | E-mail
+            <p class="text-black-50 col-md-9" style="margin: 0;">느프트 주식회사 | 대표이사 유정욱 | 경기 성남시 분당구 서현로 204, 618호 | E-mail
                 NeFT@neft.pics | 사업자번호 111-11-02177
                 COPYRIGHT ⓒ NeFT. ALL RIGHTS RESERVED</p>
         </footer>
     </div>
-<script>
-    const page = 'notice'
-</script>
-<script src="/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
 
 </body>
 
